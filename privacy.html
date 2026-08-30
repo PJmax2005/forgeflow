@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ForgeFlow — Privacy policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #FBF6EA; --surface: #FFFFFF;
+      --ink: #26201A; --ink-muted: #6E655F; --ink-faint: #B4A98F;
+      --border: #EBE1CD; --accent: #E17137; --accent-ink: #B57A2E;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+      font-size: 16px; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+    a { color: var(--accent); }
+
+    .brand {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: "Fraunces", Georgia, serif;
+      font-style: italic; font-weight: 500; font-size: 20px;
+      color: var(--ink); text-decoration: none;
+      margin-bottom: 32px;
+    }
+    .brand-mark {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--accent); display: inline-flex;
+      align-items: center; justify-content: center;
+      color: #fff; font-size: 15px; font-style: normal;
+    }
+
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 500; font-style: italic;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.05; letter-spacing: -0.015em;
+      margin: 0 0 8px;
+    }
+    .meta { color: var(--ink-faint); font-size: 13px; margin-bottom: 40px; }
+
+    h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 500; font-style: italic;
+      font-size: 22px; margin: 40px 0 8px;
+    }
+    h3 { font-size: 16px; font-weight: 600; margin: 24px 0 6px; }
+    p, li { color: var(--ink); }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 4px; }
+    .box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px 20px; margin: 16px 0;
+    }
+    .box p { margin: 0; color: var(--ink-muted); font-size: 14px; }
+    footer {
+      margin-top: 64px; padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--ink-faint); font-size: 13px;
+    }
+    footer a { color: var(--ink-faint); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">✦</span>
+      <span>ForgeFlow</span>
+    </a>
+
+    <h1>Privacy policy</h1>
+    <div class="meta">Last updated: TBD (update on release)</div>
+
+    <p>
+      ForgeFlow is a personal planner app. This policy explains what data the app handles, who it's shared with, and the choices you have. If anything here is unclear, email <a href="mailto:Forge.day.dev@gmail.com">Forge.day.dev@gmail.com</a>.
+    </p>
+
+    <div class="box">
+      <p><strong>Short version:</strong> Your planning data lives on your device. If you sign in and turn on Cloud Sync, an encrypted copy also lives in your own Google Firebase folder so it follows you between devices. We don't sell your data, and we don't share it with advertisers.</p>
+    </div>
+
+    <h2>1. What data the app handles</h2>
+
+    <h3>Data you enter into the app</h3>
+    <ul>
+      <li>Schedule events, tasks, goals, milestones, habits, projects, project steps and notes, expenses, contacts you save inside the app, saved map places, alarms, blerbs (quick notes), and any chat history with Ze (the optional AI assistant).</li>
+      <li>Optional images you attach — for example, a receipt photo you send to Ze to parse. These images are transmitted for processing and not retained beyond the transaction that uses them.</li>
+    </ul>
+
+    <h3>Account &amp; sign-in</h3>
+    <ul>
+      <li>If you sign in, we use Google Sign-In. We receive your email, display name, and profile picture from Google to identify your account.</li>
+    </ul>
+
+    <h3>Device-level data</h3>
+    <ul>
+      <li><strong>Approximate location</strong> — only when you use a location-related feature (for example, saving a place on the map). Location is not tracked in the background.</li>
+      <li><strong>Camera and photo access</strong> — only when you tap "attach" to share an image with the app or Ze.</li>
+      <li><strong>Notifications</strong> — used for reminders and alarms you set yourself.</li>
+      <li><strong>Advertising ID</strong> — used by Google AdMob for ad serving on the free tier (see §4).</li>
+      <li><strong>Crash diagnostics</strong> — Firebase Crashlytics records app crashes so we can fix them. Reports include device model, OS version, and the app's state at the moment of the crash; they do not include your planning data.</li>
+    </ul>
+
+    <h2>2. Where your data is stored</h2>
+
+    <h3>On your device</h3>
+    <p>Your planning data lives in the app's local database on your device by default.</p>
+
+    <h3>In the cloud (optional)</h3>
+    <p>If you turn on Cloud Backup &amp; Sync in Settings, an encrypted copy of your planning data is stored in Google Firebase Firestore under your account. This lets you use the app on another device with the same data. Turning sync off keeps your data local; signing out and choosing "quit &amp; lose all data" deletes the local copy.</p>
+
+    <h2>3. Ze — the AI assistant (optional, paid)</h2>
+    <p>
+      Ze is opt-in. When you use it, the specific message you send (text, and any image you attach) is transmitted to Google Gemini via Firebase Cloud Functions for processing. Ze may also send along the relevant slice of your app data (for example, today's schedule when planning) so that its answer is useful.
+    </p>
+    <p>
+      Ze's short-term chat history, long-term facts (things you tell it to remember), and detected routines are stored in Firebase under your account. You can view, edit, and delete these from Settings → Ze Memory. Disabling Ze entirely deletes them.
+    </p>
+
+    <h2>4. Advertising (free tier only)</h2>
+    <p>
+      Free tier users see ads served by Google AdMob. AdMob may collect your device's advertising ID and coarse device information to select and measure ads. Paid subscribers do not see ads.
+    </p>
+    <p>
+      On first launch in regions covered by GDPR/CCPA (or where local law requires), Google's User Messaging Platform shows a consent dialog. You can revoke consent at any time in Settings.
+    </p>
+    <p>
+      See Google's <a href="https://policies.google.com/technologies/ads">ads privacy policy</a> for the network side of this.
+    </p>
+
+    <h2>5. What we do <em>not</em> collect</h2>
+    <ul>
+      <li>We do not read your device's contacts, photo library, calendar, or other apps' data. The "Contacts" section of ForgeFlow is a separate, in-app-only list you build yourself.</li>
+      <li>We do not sell your data. Ever.</li>
+      <li>We do not use your data to train AI models.</li>
+    </ul>
+
+    <h2>6. Your rights</h2>
+    <ul>
+      <li><strong>Export</strong> — Settings → Data &amp; Export lets you download a copy of your planning data.</li>
+      <li><strong>Delete</strong> — Deleting an item moves it to a 7-day trash, then permanent delete. Signing out with the "quit &amp; lose all data" option deletes the local copy of your data; the cloud copy is deleted from Firebase within 30 days on account deletion request.</li>
+      <li><strong>Access</strong> — Email us at <a href="mailto:Forge.day.dev@gmail.com">Forge.day.dev@gmail.com</a> and we'll provide a full export or delete your account on request.</li>
+    </ul>
+
+    <h2>7. Children</h2>
+    <p>
+      ForgeFlow is not directed to children under 13. We do not knowingly collect data from children. If you believe a child has provided us data, email us and we will delete it.
+    </p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>
+      Material changes to this policy will be announced in the app before they take effect. The "Last updated" date at the top of this page reflects the most recent change.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      Questions, requests, or complaints: <a href="mailto:Forge.day.dev@gmail.com">Forge.day.dev@gmail.com</a>.
+    </p>
+
+    <footer>
+      <a href="index.html">← Back to ForgeFlow</a>
+    </footer>
+  </div>
+</body>
+</html>
